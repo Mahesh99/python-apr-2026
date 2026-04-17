@@ -1,0 +1,32 @@
+Programming(coding) is giving instructions to the computer to perform a specific task.
+
+programming lang. C, java, python, js..etc
+Python is a general purpose, object oriented, interpreted programming lang.
+
+
+styles/paradigms: structured, object oriented
+interpreter - executes code line by line
+
+
+Machine language(binary) 0's or 1's
+Assembly language - symbols, nuemonics
+high level languages - human readable - C,java,python..etc
+prompt engineering
+
+
+001010100101 - Hi
+hello - 0001110101000010101001
+
+
+4 + 5
+10001001 10001000111 1101011
+add,4,5
+4+5
+
+1MB=1x1000KB=1000x1000B=1000000B
+1B= 8 bits
+1 bit -> 0 or 1
+
+
+VS code - IDE - code editor
+Python - interpreter
