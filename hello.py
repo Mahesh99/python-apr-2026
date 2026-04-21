@@ -271,3 +271,41 @@ print(s2[l-14])
 # print(s2[100])
 
 
+# slicing
+# syntax to slice a string
+# str_var[start:end:step]
+# end is exclusive 
+s2="python language"
+print(s2[0:6])
+print(s2[7:15])
+
+print(s2[-15:-8])
+print(s2[4:6])
+
+print(s2[0:6:2]) # pto
+print(s2[7:15:3]) # lgg
+print(s2[7:15:4]) # lu
+
+print(s2[:6])
+print(s2[7:])
+print(s2[:])
+
+print(s2[::2]) 
+print(s2[::-1])
+print(s2[::-2])
+
+# String operations
+# concatenation(+)
+# repetition(*)
+s1="hello"
+s2="world"
+print(s1+s2) # helloworld
+s3=s1+s2+s1
+print(s3) # helloworldhello
+s4=s1+" "+s2
+print(s4) # hello world
+
+print(s1*3) # hellohellohello
+print(s2*2) # worldworld
+
+# string methods
