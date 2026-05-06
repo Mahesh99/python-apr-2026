@@ -308,4 +308,33 @@ print(s4) # hello world
 print(s1*3) # hellohellohello
 print(s2*2) # worldworld
 
-# string methods
+# string methods(built-in functions)
+# 1. upper() - converts a string to uppercase
+# 2. lower() - converts a string to lowercase
+# 3. title() - converts the first character of each word to uppercase
+# 4. strip() - removes leading and trailing whitespace
+# 5. replace() - replaces a substring with another substring
+# 6. index() - returns the index of the first occurrence of a substring
+# 7. find() - returns the index of the first occurrence of a substring, returns -1 if not found\
+# syntax to use string methods
+# str_var.method_name(arguments)
+
+s="hello world"
+s2="Python programming"
+print(s.upper()) # HELLO WORLD
+print(s2.lower()) # python
+print(s.title()) # Hello World
+s3="   hello world   "
+print(s3.strip()) # "hello world"
+print(s.replace("o", "a")) # hella warld
+
+# substring means a part of the string
+print(s2.replace("Python", "Java")) # Java programming
+print(s.index("o")) # 4
+print(s.index("llo")) # 2
+# print(s.index("z")) # error
+print(s.find("o")) # 4
+print(s.find("llo")) # 2
+print(s.find("z")) # -1
+
+
