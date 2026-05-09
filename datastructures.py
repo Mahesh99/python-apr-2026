@@ -90,3 +90,35 @@ print(l.index(5)) # 4
 
 l.clear()
 print(l) # []
+
+# membership operators
+# in and not in
+l = [1, 2, 3, 4, 5]
+print(3 in l) # True
+print(11 in l) # False
+print(11 not in l) # True
+
+s="hello world"
+print("hello" in s) # True
+print("world" not in s) # False
+
+# tuple
+# Tuple is an immutable ordered sequence of elements
+# They are similar to lists in the way they are created and accessed.
+# Tuples are created using parenthesis - ()
+# Tuples are mainly used when you have values which are closely related and their position matters
+t = (1, 2, 3, 4, 5)
+print(t)
+
+point = (4,3,11) # (x,y,z) coordinates in a 3d space
+location = (17.393549, 78.533836) #(latitude, longitude)
+dimens = 10,20,15 # (l,b,h) dimensions of a cuboid. Tuple can also be intialized this way
+
+l,b,h = dimens # Tuple unpacking
+
+# print(dir(tuple))
+# print(dir(list))
+
+
+
+
