@@ -119,6 +119,88 @@ l,b,h = dimens # Tuple unpacking
 # print(dir(tuple))
 # print(dir(list))
 
+# indexing and slicing are same as lists
+print(t[2]) # 3
+print(t[2:5]) # (3, 4, 5)
+
+
+# sets
+# Sets are unordered collections of unique elements
+# They are created using curly braces - {}
+# Sets are mainly used when you have values which are not related and their position does not matter
+s = {1, 2, 3, 4, 5, 5, 5}
+print(s)
+
+s2={3, 4, 5, 6, 7}
+print(s2)
+
+
+# membership operators
+# in and not in
+s = {1, 2, 3, 4, 5}
+print(3 in s) # True
+print(11 in s) # False
+print(11 not in s) # True
+
+
+# set operations(methods)
+print(s.union(s2)) # {1, 2, 3, 4, 5, 6, 7}
+print(s.intersection(s2)) # {3, 4, 5}
+print(s.difference(s2)) # {1, 2}
+
+print(s.issuperset(s2)) # True
+print(s2.issubset(s)) # False
+a = {1, 2, 3}
+b = {1, 2, 3, 4, 5}
+print(a.issubset(b)) # True
+print(b.issuperset(a)) # True
+
+# adding an element to a set
+s.add(6)
+print(s) # {1, 2, 3, 4, 5, 6}
+
+# removing an element from a set
+s.remove(6)
+print(s) # {1, 2, 3, 4, 5}
+
+# clearing a set
+s.clear()
+print(s) # set()
 
 
 
+# Dictionary
+# Dictionary is an unordered collection of key-value pairs
+# They are created using curly braces - {}
+# Dictionaries are mainly used when you have values which are related and their position does not matter
+
+d = {"name": "John", "age": 30, "city": "New York"}
+print(d)
+
+# accessing values in a dictionary
+print(d["name"]) # John
+print(d["age"]) # 30
+print(d["city"]) # New York
+
+# adding an element to a dictionary
+d["country"] = "USA"
+print(d) # {'name': 'John', 'age': 30, 'city': 'New York', 'country': 'USA'}
+d["age"] = 31
+print(d) # {'name': 'John', 'age': 31, 'city': 'New York', 'country': 'USA'}
+
+# removing an element from a dictionary
+del d["country"]
+print(d) # {'name': 'John', 'age': 31, 'city': 'New York'}
+
+# dictionary functions
+print(len(d)) # 3
+print(d.keys()) # dict_keys(['name', 'age', 'city'])
+print(d.values()) # dict_values(['John', 31, 'New York'])
+print(d.items()) # dict_items([('name', 'John'), ('age', 31), ('city', 'New York')]) 
+
+# membership operators
+# in and not in
+d = {"name": "John", "age": 30, "city": "New York"}
+print("name" in d) # True
+print("country" in d) # False
+print("country" not in d) # True
