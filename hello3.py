@@ -14,7 +14,7 @@ print(10**3)
 
 # comments
 # python ignores those lines
-# human readability 
+# code readability 
 # 1. single line - #
 # 2. Multi-line - """ or '''
 
