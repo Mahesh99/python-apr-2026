@@ -1,3 +1,4 @@
+import random
 # functions
 # a function is a block of code that performs a specific task
 
@@ -115,3 +116,39 @@ def print_info(**kwargs):
 print_info(name="Alice", age=30, city="New York")
 print_info(name="Bob", profession="Engineer", country="USA")
 
+
+def mix_of_arguments(a,b,c=10,d=20, *args, **kwargs):
+    print("a:", a)
+    print("b:", b)
+    print("c:", c)
+    print("d:", d)
+    print("args:", args)
+    print("kwargs:", kwargs)
+
+
+mix_of_arguments(1, 2)
+mix_of_arguments(1, 2, 3)
+mix_of_arguments(1, 2, 3, 4)
+mix_of_arguments(1, 2, 3, 4, 5, 6, 7)
+mix_of_arguments(1, 2, 3, 4, 5, 6, 7, name="Alice", age=30)
+mix_of_arguments(1, 2, d=40, c=20,name="Alice", age=30)
+mix_of_arguments(d=40, c=20,name="Alice", age=30,a=1,b=2)
+
+
+def mind_reader():
+    r=random.randint(1,10)
+    print("Choose a number between 1 and 10")
+    input()
+    print("Multiply the result by 2")
+    input()
+    print("Add ",r)
+    input()
+    print("Divide the result by 2")
+    input()
+    print("Subract your number from the result")
+    input()
+    print("Are you left with ",r/2)
+
+mind_reader()
+mind_reader()
+mind_reader()
