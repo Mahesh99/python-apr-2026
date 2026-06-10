@@ -30,3 +30,16 @@ add,4,5
 
 VS code - IDE - code editor
 Python - interpreter
+
+
+d2
+2d
+del
+and
+def
+_2hi
+today temp=10
+
+There are 2 modes in python
+1. Interactive mode
+2. Script mode
