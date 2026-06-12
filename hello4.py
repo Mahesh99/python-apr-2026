@@ -146,3 +146,123 @@ print(not False) # True
 # 5%5 -> 0
 # 15%3 -> 0
 # 15%5 -> 0
+
+
+# strings
+s="hello world"
+s2='python programming'
+s3='''welcome to 
+python programming 
+classes'''
+s4="""python programming"""
+print(s)
+print(s2)
+print(s3)
+print(s4)
+
+# string operations
+# concatenation(+)
+# repetition(*)
+
+# indexing
+# slicing
+
+first_name="john"
+last_name="doe"
+full_name=first_name+" "+last_name
+print(full_name)
+
+print(first_name*5) # johnjohnjohn
+print("siddharth"*10)
+
+# Indexing
+s="pramanicus"
+# p r a m a n i c u s
+# 0 1 2 3 4 5 6 7 8 9
+#-10 -9 -8 -7 -6 -5 -4 -3 -2 -1
+
+# syntax
+# variable_name[index]
+print(s[3])
+print(s[3])
+
+print(s[-1])
+print(s[-2])
+
+# Slicing
+# syntax
+# variable_name[start_index:end_index]
+# end_index is exclusive
+
+s="pramanicus"
+print(s[2:5]) # ama
+print(s[2:]) # macus
+print(s[:5]) # prama
+print(s[:]) # pramanicus
+
+# syntax
+# variable_name[start_index:end_index:step]
+print(s[2:8:2]) # amc
+print(s[::2])
+print(s[::3])
+print(s[::-1])
+
+# f-strings
+name="john"
+age=30
+print("my name is " + name + " and my age is " + str(age))
+
+print(f"my name is {name} and my age is {age}")
+
+# string methods
+# syntax
+# variable_name.method()
+
+# upper() - converts the string to uppercase
+# lower() - converts the string to lowercase
+# title() - converts the first character of each word to uppercase
+# strip() - removes leading and trailing whitespace
+# replace() - replaces a substring with another substring
+# capitalize() - converts the first character of the string to uppercase and the rest to lowercase
+# isalpha() - returns True if all characters in the string are alphabetic
+# isdigit() - returns True if all characters in the string are digits
+s="Hello World"
+s2="welcome to python programming classes  "
+print(s.upper()) # HELLO WORLD
+print(s.lower()) # hello world
+print(s2.title()) # Welcome To Python Programming Classes
+print(s2.strip()) # welcome to python programming classes
+print(s.replace("o","0")) # Hell0 W0rld
+print(s.capitalize()) # Hello world
+print(s.isalpha()) # False
+print(s.isdigit()) # False
+
+# Escape characters
+# \n - new line
+# \t - tab
+# \\ - backslash
+# \' - single quote
+# \" - double quote
+# \r - carriage return
+# \b - backspace
+
+print("hello\nworld")
+print('hello\tworld')
+print("hello \"w\"orld")
+print("hello\rwor")
+print("hello\bworld")
+print("hel\\")
+# Membership operators
+# in and not in
+s="hello world"
+print("hello" in s) # True
+print("world" not in s) # False
+
+# Basic data types
+# int - integer
+# float - decimal
+# str - string
+# bool - boolean
+
+# Data structures types
+# list, tuple, set, dictionary

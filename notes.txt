@@ -40,6 +40,6 @@ def
 _2hi
 today temp=10
 
-There are 2 modes in python
+There are 2 modes in python 
 1. Interactive mode
 2. Script mode
