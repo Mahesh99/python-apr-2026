@@ -149,6 +149,7 @@ print(not False) # True
 
 
 # strings
+# string is a immutable ordered sequence of characters
 s="hello world"
 s2='python programming'
 s3='''welcome to 
@@ -266,3 +267,4 @@ print("world" not in s) # False
 
 # Data structures types
 # list, tuple, set, dictionary
+
