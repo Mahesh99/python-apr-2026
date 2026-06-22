@@ -38,3 +38,7 @@ c=50
 f=1.8*c+32
 print(f)
 
+temp=36
+today_temp=36
+
+

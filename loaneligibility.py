@@ -5,8 +5,8 @@
 
 
 # age should be 18 or above and income greater than 20000 
-age=int(input("Enter your age: ")) # "12"
-income=int(input("Enter your income: ")) # "20000"
+age=int(input("Enter your age: ")) # "12" -> 12
+income=int(input("Enter your income: ")) # "20000" -> 20000
 
 print(age>=18 and income>20000)
 # 20 >= 18 and 22000 > 20000

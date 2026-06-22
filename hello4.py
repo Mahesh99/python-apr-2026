@@ -57,6 +57,10 @@ b=1.1 # float -1.3
 c=True # bool False
 d="hello" # str "10","python",'hi'
 
+
+
+
+
 # type() - it is an inbuilt function which is used to find the type of a variable or value
 print(type(a))
 print(type(b))
@@ -66,6 +70,8 @@ print(type(10))
 print(type(1.1))
 print(type(True))
 print(type("hello"))
+
+
 
 # Type conversion
 # int(),float(),str(),bool()
@@ -118,6 +124,7 @@ b=10<5
 print(type(a),a)
 print(type(b),b)
 
+
 # logical operators
 # and,or,not
 print(True and True) # True
@@ -132,6 +139,7 @@ print(False or False) # False
 
 print(not True) # False
 print(not False) # True
+
 
 # even odd ex
 # 3%2 -> 1
@@ -152,14 +160,14 @@ print(not False) # True
 # string is a immutable ordered sequence of characters
 s="hello world"
 s2='python programming'
-s3='''welcome to 
-python programming 
-classes'''
+s3='''python programming'''
 s4="""python programming"""
 print(s)
 print(s2)
 print(s3)
 print(s4)
+
+a='this isn\'t a normal string'
 
 # string operations
 # concatenation(+)
@@ -176,6 +184,7 @@ print(full_name)
 print(first_name*5) # johnjohnjohn
 print("siddharth"*10)
 
+'''
 # Indexing
 s="pramanicus"
 # p r a m a n i c u s
@@ -268,3 +277,4 @@ print("world" not in s) # False
 # Data structures types
 # list, tuple, set, dictionary
 
+'''
