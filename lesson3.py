@@ -14,18 +14,18 @@ import random
 # function_name(arguments)
 
 # Example 1
-def greet(name):
-    print("Hello, " + name + "!")
+def greet():
+    print("Hello World!")
+    print("Hello World 2!")
 
-greet("John")
-greet("Alice")
-greet("Bob")
-print("End of program")
-greet("Charlie")
+greet()
+greet()
+# greet()
 
 # Example 2
 def add(a, b):
-    return a + b
+    c = a + b
+    return c
 
 result = add(5, 3)
 print("The sum is:", result)
@@ -54,7 +54,9 @@ def loan_eligibility(age, income):
 # loan_status = loan_eligibility(age, income)  
 # print("Loan status:", loan_status)
 
+
 """
+Based on the arguments, a function can be classified into the following categories:
 1. Positional arguments
 2. Default arguments
 3. Variable-length arguments
@@ -66,6 +68,8 @@ def greet(name="Guest"):
 
 greet()
 greet("Alice")
+greet("Bob")
+
 
 def calculate_area(radius, pi=3.14):
     area = pi * radius ** 2
@@ -81,6 +85,7 @@ print("The area is:", area)
 area = calculate_area(radius=5, pi=3.1415926535)
 print("The area is:", area)
 
+
 # there can be more than one default argument in a function
 def greet(name="Guest", greeting="Hello"):
     print(greeting + ", " + name + "!")
@@ -88,6 +93,7 @@ def greet(name="Guest", greeting="Hello"):
 greet()
 greet("Alice")
 greet("Bob", "Hi")
+greet(greeting="Hey")
 
 # you can call function with keyword arguments
 greet(greeting="Welcome", name="Charlie")
@@ -106,6 +112,7 @@ print("The sum is:", result)
 
 result = sum_numbers(10, 20, 30)
 print("The sum is:", result)
+
 
 # variable-length keyword arguments
 def print_info(**kwargs):
@@ -133,21 +140,27 @@ mix_of_arguments(1, 2, 3, 4, 5, 6, 7)
 mix_of_arguments(1, 2, 3, 4, 5, 6, 7, name="Alice", age=30)
 mix_of_arguments(1, 2, d=40, c=20,name="Alice", age=30)
 mix_of_arguments(d=40, c=20,name="Alice", age=30,a=1,b=2)
+mix_of_arguments(1, 2, 5, 6, 7,name="Alice", age=30)
+
+#unpacking
+j=[1,2,3,4,5]
+mix_of_arguments(*j)
 
 
 def mind_reader():
     r=random.randint(1,10)
+    v=random.randint(2,4)
     print("Choose a number between 1 and 10")
     input()
-    print("Multiply the result by 2")
+    print("Multiply the result by ",v)
     input()
     print("Add ",r)
     input()
-    print("Divide the result by 2")
-    input()
+    print("Divide the result by ",v)
+    input() 
     print("Subract your number from the result")
     input()
-    print("Are you left with ",r/2)
+    print("Are you left with ",r/v)
 
 mind_reader()
 mind_reader()

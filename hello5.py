@@ -40,5 +40,3 @@ print(f)
 
 temp=36
 today_temp=36
-
-

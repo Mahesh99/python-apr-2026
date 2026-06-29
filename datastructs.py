@@ -45,9 +45,10 @@ print(marks[::2]) # [85, 78, 88]
 print(len(marks)) # 5
 print(min(marks)) # 78
 print(max(marks)) # 92
-print(sum(marks)) # 435
+print(sum(marks)) # 433
 
-# for strigns min() and max() will return the lexicographically smallest and largest character respectively
+
+# for strings min() and max() will return the lexicographically smallest and largest character respectively
 print(len(fruits)) # 5
 print(min(fruits)) # apple
 print(max(fruits)) # grapes
@@ -82,6 +83,7 @@ print(s3)
 marks=[85, 90, 78, 92, 88, 90,78]
 marks.append(95)
 print(marks)
+
 marks.append(85)
 print(marks)
 
@@ -127,15 +129,17 @@ l,b,h = dimens # Tuple unpacking
 
 # Set
 # They are unordered, mutable, no duplicates
+# set is an unordered mutable collection of unique elements
+
 s = {1, 2, 3, 4, 5}
 print(s)
 print(type(s))
 
 s1={1, 2, 3, 4, 5, 5, 5}
-print(s2)
+print(s1)
 
 s2={3, 4, 5, 6, 7}
-print(s3)
+print(s2)
 
 # union, intersection, difference
 s4=s1.union(s2) # {1, 2, 3, 4, 5, 6, 7}
@@ -148,9 +152,11 @@ print(s5)
 # difference
 s6=s1.difference(s2) # {1, 2}
 print(s6)
-
+print(s6.issubset(s1)) # True
+print(s2.issuperset(s5)) # True
 # print(dir(set))
 # print(help(set.pop))
+
 
 # Dictionary
 # key-value pairs
@@ -186,6 +192,7 @@ print(student)
 # del student
 # print(student) # NameError: name 'student' is not defined
 
+
 # dictionary methods
 # keys(), values(), items(), get(), pop(), popitem(), clear()
 
@@ -215,3 +222,12 @@ v=list(student.values())
 print(v)
 
 print(list(student.items()))
+
+l=[1,2,2,3,3,3,4,4,4,4]
+s=list(set(l))
+print(s)
+
+print(list(student.keys()))
+print(list(student.values()))
+print(list(student.items()))
+print(list(student))

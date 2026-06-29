@@ -18,3 +18,4 @@ input()
 print("Subract your number from the result")
 input()
 print("Are you left with ",r/2)
+

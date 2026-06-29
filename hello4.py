@@ -184,7 +184,7 @@ print(full_name)
 print(first_name*5) # johnjohnjohn
 print("siddharth"*10)
 
-'''
+
 # Indexing
 s="pramanicus"
 # p r a m a n i c u s
@@ -194,7 +194,7 @@ s="pramanicus"
 # syntax
 # variable_name[index]
 print(s[3])
-print(s[3])
+print(s[5])
 
 print(s[-1])
 print(s[-2])
@@ -206,13 +206,13 @@ print(s[-2])
 
 s="pramanicus"
 print(s[2:5]) # ama
-print(s[2:]) # macus
+print(s[2:]) # amanicus
 print(s[:5]) # prama
 print(s[:]) # pramanicus
 
 # syntax
 # variable_name[start_index:end_index:step]
-print(s[2:8:2]) # amc
+print(s[2:8:2]) # aai
 print(s[::2])
 print(s[::3])
 print(s[::-1])
@@ -237,7 +237,7 @@ print(f"my name is {name} and my age is {age}")
 # isalpha() - returns True if all characters in the string are alphabetic
 # isdigit() - returns True if all characters in the string are digits
 s="Hello World"
-s2="welcome to python programming classes  "
+s2="  welcome to python programming classes  "
 print(s.upper()) # HELLO WORLD
 print(s.lower()) # hello world
 print(s2.title()) # Welcome To Python Programming Classes
@@ -262,6 +262,9 @@ print("hello \"w\"orld")
 print("hello\rwor")
 print("hello\bworld")
 print("hel\\")
+print("\a\a\a\a\a")
+
+
 # Membership operators
 # in and not in
 s="hello world"
@@ -277,4 +280,3 @@ print("world" not in s) # False
 # Data structures types
 # list, tuple, set, dictionary
 
-'''
