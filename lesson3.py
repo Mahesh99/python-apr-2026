@@ -162,6 +162,108 @@ def mind_reader():
     input()
     print("Are you left with ",r/v)
 
-mind_reader()
-mind_reader()
-mind_reader()
+# mind_reader()
+# mind_reader()
+# mind_reader()
+
+
+# Recursion
+# A function that calls itself is called a recursive function. Recursion is a programming technique where a function solves a problem by breaking it down into smaller subproblems of the same type. Each recursive call reduces the size of the problem until it reaches a base case, which is a simple case that can be solved directly without further recursion.
+
+
+# n=int(input("Enter a number to find its factorial: "))
+n=5
+fact=1
+for i in range(1, n+1):
+    fact *= i
+
+print("Factorial of", n, "is", fact)
+
+
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*fact(n-1)
+
+# n=int(input("Enter a number to find its factorial: "))
+# print("Factorial of", n, "is", fact(n))
+
+"""
+fact(5)
+return 5*fact(4)
+
+fact(4)
+return 4*fact(3)
+
+
+fact(3)
+return 3*fact(2)
+
+fact(2)
+return 2*fact(1)
+
+fact(1)
+return 1
+"""
+
+
+# Lambda functions
+cube = lambda x: x**3
+
+print(cube(3))
+print(cube(5))
+c2f = lambda c: (c * 9/5) + 32
+print(c2f(0))
+print(c2f(37.4))
+
+add = lambda a, b: a + b
+print(add(5, 3))
+
+ab3=lambda a, b: f'(a+b)^3={a**3+3*a*b**2+3*a**2*b+b**3}'
+print(ab3(1,2))
+
+l=["a11","z2","k7","14","b4","1","4"]
+s='a11'
+k=int(s[1:])
+print(type(k),k)
+
+
+def test(x):
+    if x.isdigit():
+        return int(x)
+    else:
+        return int(x[1:])
+
+# l.sort(key=lambda x:int(x[1:]))
+# l.sort(key=test)
+# print(l)
+
+k=filter(lambda x: True if x.isdigit() else False, l)
+print(list(k))
+
+k=map(lambda x: "Num" if x.isdigit() else "Not Num", l)
+print(list(k))
+
+
+employees = [{
+                "name":"Sravan",
+                "age":25,
+                "salary":30000
+             },
+             {
+                "name":"Rahul",
+                "age":27,
+                "salary":32000
+             },
+             {
+                "name":"Keerthana",
+                "age":23,
+                "salary":35000
+             }
+            ]
+
+sals=map(lambda x:x['salary'],employees)
+sals=list(sals)
+print(sals)
+print(sum(sals)/len(sals))
