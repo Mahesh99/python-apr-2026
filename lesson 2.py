@@ -178,14 +178,17 @@ for i in range(1, 11):
 l = [i for i in range(10)]
 print(l)
 
+
 l = [i*2 for i in range(1,11)]
 print(l)
 
 l = [i for i in range(10) if i%2==0]
 print(l)
 
+
 l = [i for i in range(10) if i%2!=0]
 print(l)
+
 
 l =["even" if i%2==0 else "odd" for i in range(10)]
 print(l)
