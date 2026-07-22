@@ -51,3 +51,36 @@ print(__name__)
 import sys
 print(sys.path)
 
+
+
+import random
+
+
+r=random.randint(1,10)
+print(r)
+
+r=random.randrange(1,21);
+print(r)
+
+cards=[i for i in range(1,53)]
+random.shuffle(cards)    
+print(cards)
+
+r=random.choice(cards)
+print(r)
+
+random.seed(10)
+print(random.randint(1,10))
+print(random.randint(1,10))
+print(random.randint(1,10))
+print(random.randint(1,10))
+print(random.randint(1,10))
+print(random.randint(1,10))
+
+
+# __init__.py
+
+import swiggy.test
+swiggy.test.dummy()
+
+import test2
